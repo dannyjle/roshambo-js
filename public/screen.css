@@ -60,6 +60,7 @@ section h3 {
   margin: 1rem 0;
   font-family: Monospace;
   font-size: 4rem;
+  visibility: hidden;
 }
 
 fieldset {

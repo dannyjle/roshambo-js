@@ -5,13 +5,7 @@ function main() {
   let p1 = ''
   let p2 = ''
 
-  // ROCK
-  function selectRockOne(event) {
-    const teamOneRock = document.querySelector('.team1 h3')
-    teamOneRock.textContent = rock
-    p1 = rock
-    console.log(p1)
-
+  function gameLogic() {
     if (p1 === p2) {
       window.alert('DRAW!')
     } else if (p1 === rock && p2 === scissor) {
@@ -27,6 +21,14 @@ function main() {
     } else if (p2 == paper && p1 == rock) {
       window.alert('PLAYER 2 WINS')
     }
+  }
+
+  // ROCK
+  function selectRockOne(event) {
+    const teamOneRock = document.querySelector('.team1 h3')
+    teamOneRock.textContent = rock
+    p1 = rock
+    console.log(p1)
   }
   document
     .querySelector('.team1 .rock')
@@ -38,22 +40,6 @@ function main() {
     teamOnePaper.textContent = paper
     p1 = paper
     console.log(p1)
-
-    if (p1 === p2) {
-      window.alert('DRAW!')
-    } else if (p1 === rock && p2 === scissor) {
-      window.alert('PLAYER 1 WINS')
-    } else if (p1 === scissor && p2 === paper) {
-      window.alert('PLAYER 1 WINS')
-    } else if (p1 == 'paper' && p2 == 'rock') {
-      window.alert('PLAYER 1 WINS')
-    } else if (p2 === rock && p1 === scissor) {
-      window.alert('PLAYER 2 WINS')
-    } else if (p2 === scissor && p1 === paper) {
-      window.alert('PLAYER 2 WINS')
-    } else if (p2 == paper && p1 == rock) {
-      window.alert('PLAYER 2 WINS')
-    }
   }
   document
     .querySelector('.team1 .paper')
@@ -65,22 +51,6 @@ function main() {
     teamOneScissor.textContent = scissor
     p1 = scissor
     console.log(p1)
-
-    if (p1 === p2) {
-      window.alert('DRAW!')
-    } else if (p1 === rock && p2 === scissor) {
-      window.alert('PLAYER 1 WINS')
-    } else if (p1 === scissor && p2 === paper) {
-      window.alert('PLAYER 1 WINS')
-    } else if (p1 == 'paper' && p2 == 'rock') {
-      window.alert('PLAYER 1 WINS')
-    } else if (p2 === rock && p1 === scissor) {
-      window.alert('PLAYER 2 WINS')
-    } else if (p2 === scissor && p1 === paper) {
-      window.alert('PLAYER 2 WINS')
-    } else if (p2 == paper && p1 == rock) {
-      window.alert('PLAYER 2 WINS')
-    }
   }
   document
     .querySelector('.team1 .scissor')
@@ -96,22 +66,7 @@ function main() {
     teamTwoRock.textContent = rock
     p2 = rock
     console.log(p2)
-
-    if (p1 === p2) {
-      window.alert('DRAW!')
-    } else if (p1 === rock && p2 === scissor) {
-      window.alert('PLAYER 1 WINS')
-    } else if (p1 === scissor && p2 === paper) {
-      window.alert('PLAYER 1 WINS')
-    } else if (p1 == 'paper' && p2 == 'rock') {
-      window.alert('PLAYER 1 WINS')
-    } else if (p2 === rock && p1 === scissor) {
-      window.alert('PLAYER 2 WINS')
-    } else if (p2 === scissor && p1 === paper) {
-      window.alert('PLAYER 2 WINS')
-    } else if (p2 == paper && p1 == rock) {
-      window.alert('PLAYER 2 WINS')
-    }
+    gameLogic()
   }
   document
     .querySelector('.team2 .rock')
@@ -123,22 +78,7 @@ function main() {
     teamOnePaper.textContent = paper
     p2 = paper
     console.log(p2)
-
-    if (p1 === p2) {
-      window.alert('DRAW!')
-    } else if (p1 === rock && p2 === scissor) {
-      window.alert('PLAYER 1 WINS')
-    } else if (p1 === scissor && p2 === paper) {
-      window.alert('PLAYER 1 WINS')
-    } else if (p1 == 'paper' && p2 == 'rock') {
-      window.alert('PLAYER 1 WINS')
-    } else if (p2 === rock && p1 === scissor) {
-      window.alert('PLAYER 2 WINS')
-    } else if (p2 === scissor && p1 === paper) {
-      window.alert('PLAYER 2 WINS')
-    } else if (p2 == paper && p1 == rock) {
-      window.alert('PLAYER 2 WINS')
-    }
+    gameLogic()
   }
   document
     .querySelector('.team2 .paper')
@@ -150,22 +90,7 @@ function main() {
     teamOneScissor.textContent = scissor
     p2 = scissor
     console.log(p2)
-
-    if (p1 === p2) {
-      window.alert('DRAW!')
-    } else if (p1 === rock && p2 === scissor) {
-      window.alert('PLAYER 1 WINS')
-    } else if (p1 === scissor && p2 === paper) {
-      window.alert('PLAYER 1 WINS')
-    } else if (p1 == 'paper' && p2 == 'rock') {
-      window.alert('PLAYER 1 WINS')
-    } else if (p2 === rock && p1 === scissor) {
-      window.alert('PLAYER 2 WINS')
-    } else if (p2 === scissor && p1 === paper) {
-      window.alert('PLAYER 2 WINS')
-    } else if (p2 == paper && p1 == rock) {
-      window.alert('PLAYER 2 WINS')
-    }
+    gameLogic()
   }
   document
     .querySelector('.team2 .scissor')
@@ -179,6 +104,8 @@ function main() {
     teamTwoChoice = document.querySelector('.team2 h3')
     teamOneChoice.textContent = resetScore
     teamTwoChoice.textContent = resetScore
+
+    console.log(resetScore)
   }
 
   document.querySelector('footer').addEventListener('click', resetScores)
