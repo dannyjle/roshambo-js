@@ -60,7 +60,14 @@ section h3 {
   margin: 1rem 0;
   font-family: Monospace;
   font-size: 4rem;
+}
+
+h3 {
   visibility: hidden;
+}
+
+.hidden:hover h3 {
+  visibility: visible;
 }
 
 fieldset {
