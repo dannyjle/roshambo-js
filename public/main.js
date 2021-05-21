@@ -5,30 +5,28 @@ function main() {
   let p1 = ''
   let p2 = ''
 
-  // // const gameLogic = (p1, p2) => {
-  // if (p1 === p2) {
-  //   window.alert('WE have a DRAW!')
-  // } else if (p1 === 'rock' && p2 === 'scissor') {
-  //   window.alert('PlAYER 1 WINS!')
-  // } else if (p1 === 'scissor' && p2 === 'paper') {
-  //   window.alert('PlAYER 1 WINS!')
-  // } else if (p1 === 'paper' && p2 === 'rock') {
-  //   window.alert('PlAYER 1 WINS!')
-  // } else {
-  //   window.alert('PlAYER 2 WINS!')
-  // }
-
-  // return
-  // // }
-
-  // Selections for Team1
-
   // ROCK
   function selectRockOne(event) {
     const teamOneRock = document.querySelector('.team1 h3')
     teamOneRock.textContent = rock
     p1 = rock
     console.log(p1)
+
+    if (p1 === p2) {
+      window.alert('DRAW!')
+    } else if (p1 === rock && p2 === scissor) {
+      window.alert('PLAYER 1 WINS')
+    } else if (p1 === scissor && p2 === paper) {
+      window.alert('PLAYER 1 WINS')
+    } else if (p1 == 'paper' && p2 == 'rock') {
+      window.alert('PLAYER 1 WINS')
+    } else if (p2 === rock && p1 === scissor) {
+      window.alert('PLAYER 2 WINS')
+    } else if (p2 === scissor && p1 === paper) {
+      window.alert('PLAYER 2 WINS')
+    } else if (p2 == paper && p1 == rock) {
+      window.alert('PLAYER 2 WINS')
+    }
   }
   document
     .querySelector('.team1 .rock')
@@ -40,6 +38,22 @@ function main() {
     teamOnePaper.textContent = paper
     p1 = paper
     console.log(p1)
+
+    if (p1 === p2) {
+      window.alert('DRAW!')
+    } else if (p1 === rock && p2 === scissor) {
+      window.alert('PLAYER 1 WINS')
+    } else if (p1 === scissor && p2 === paper) {
+      window.alert('PLAYER 1 WINS')
+    } else if (p1 == 'paper' && p2 == 'rock') {
+      window.alert('PLAYER 1 WINS')
+    } else if (p2 === rock && p1 === scissor) {
+      window.alert('PLAYER 2 WINS')
+    } else if (p2 === scissor && p1 === paper) {
+      window.alert('PLAYER 2 WINS')
+    } else if (p2 == paper && p1 == rock) {
+      window.alert('PLAYER 2 WINS')
+    }
   }
   document
     .querySelector('.team1 .paper')
@@ -51,6 +65,22 @@ function main() {
     teamOneScissor.textContent = scissor
     p1 = scissor
     console.log(p1)
+
+    if (p1 === p2) {
+      window.alert('DRAW!')
+    } else if (p1 === rock && p2 === scissor) {
+      window.alert('PLAYER 1 WINS')
+    } else if (p1 === scissor && p2 === paper) {
+      window.alert('PLAYER 1 WINS')
+    } else if (p1 == 'paper' && p2 == 'rock') {
+      window.alert('PLAYER 1 WINS')
+    } else if (p2 === rock && p1 === scissor) {
+      window.alert('PLAYER 2 WINS')
+    } else if (p2 === scissor && p1 === paper) {
+      window.alert('PLAYER 2 WINS')
+    } else if (p2 == paper && p1 == rock) {
+      window.alert('PLAYER 2 WINS')
+    }
   }
   document
     .querySelector('.team1 .scissor')
@@ -66,6 +96,22 @@ function main() {
     teamTwoRock.textContent = rock
     p2 = rock
     console.log(p2)
+
+    if (p1 === p2) {
+      window.alert('DRAW!')
+    } else if (p1 === rock && p2 === scissor) {
+      window.alert('PLAYER 1 WINS')
+    } else if (p1 === scissor && p2 === paper) {
+      window.alert('PLAYER 1 WINS')
+    } else if (p1 == 'paper' && p2 == 'rock') {
+      window.alert('PLAYER 1 WINS')
+    } else if (p2 === rock && p1 === scissor) {
+      window.alert('PLAYER 2 WINS')
+    } else if (p2 === scissor && p1 === paper) {
+      window.alert('PLAYER 2 WINS')
+    } else if (p2 == paper && p1 == rock) {
+      window.alert('PLAYER 2 WINS')
+    }
   }
   document
     .querySelector('.team2 .rock')
@@ -77,6 +123,22 @@ function main() {
     teamOnePaper.textContent = paper
     p2 = paper
     console.log(p2)
+
+    if (p1 === p2) {
+      window.alert('DRAW!')
+    } else if (p1 === rock && p2 === scissor) {
+      window.alert('PLAYER 1 WINS')
+    } else if (p1 === scissor && p2 === paper) {
+      window.alert('PLAYER 1 WINS')
+    } else if (p1 == 'paper' && p2 == 'rock') {
+      window.alert('PLAYER 1 WINS')
+    } else if (p2 === rock && p1 === scissor) {
+      window.alert('PLAYER 2 WINS')
+    } else if (p2 === scissor && p1 === paper) {
+      window.alert('PLAYER 2 WINS')
+    } else if (p2 == paper && p1 == rock) {
+      window.alert('PLAYER 2 WINS')
+    }
   }
   document
     .querySelector('.team2 .paper')
@@ -88,6 +150,22 @@ function main() {
     teamOneScissor.textContent = scissor
     p2 = scissor
     console.log(p2)
+
+    if (p1 === p2) {
+      window.alert('DRAW!')
+    } else if (p1 === rock && p2 === scissor) {
+      window.alert('PLAYER 1 WINS')
+    } else if (p1 === scissor && p2 === paper) {
+      window.alert('PLAYER 1 WINS')
+    } else if (p1 == 'paper' && p2 == 'rock') {
+      window.alert('PLAYER 1 WINS')
+    } else if (p2 === rock && p1 === scissor) {
+      window.alert('PLAYER 2 WINS')
+    } else if (p2 === scissor && p1 === paper) {
+      window.alert('PLAYER 2 WINS')
+    } else if (p2 == paper && p1 == rock) {
+      window.alert('PLAYER 2 WINS')
+    }
   }
   document
     .querySelector('.team2 .scissor')
